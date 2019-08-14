@@ -1,3 +1,6 @@
+/**
+ * @author Emin Muhammadi (https://github.com/eminmuhammadi)
+ */
 const app     = require('express')();
 const http    = require('http');
 var   auth    = require('basic-auth');

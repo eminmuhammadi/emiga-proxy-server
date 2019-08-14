@@ -1,3 +1,6 @@
+/**
+ * @author Emin Muhammadi (https://github.com/eminmuhammadi)
+ */
 const app     = require('express')();
 const fs      = require('fs');
 const path    = require('path');
