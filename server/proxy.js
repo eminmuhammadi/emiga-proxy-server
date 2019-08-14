@@ -11,7 +11,7 @@ const proxy   = require('http-proxy-middleware');
 app.use(require('helmet')());
 app.use(require('compression')());
 app.disable('x-powered-by');
-app.set('trust proxy', ['127.0.0.1', '10.0.0.80']);
+app.set('trust proxy', ['127.0.0.1', '0.0.0.0']);
 
 
 /**
@@ -23,7 +23,7 @@ const options = {
         'http'  : 80,
         'https' : 443
         },
-        gateway : '10.0.0.80'
+        gateway : '0.0.0.0'
     },
     /**
      *  Certification path for SSL
