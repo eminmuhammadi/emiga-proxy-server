@@ -1,13 +1,21 @@
-## Install Openssl for Windows (non official)
+# EmiGA Proxy Server
+Full customizeable proxy server
+
+## Installing
 ```bash
-https://slproweb.com/products/Win32OpenSSL.html
+npm install
 ```
+## Running
+```bash
+npm run dev
+```
+
+### Generate Certification
 
 ```bash
 sudo apt-get install openssl
 ```
 
-## Generate Cert
 ```bash
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
 ```
