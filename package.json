@@ -1,0 +1,42 @@
+{
+  "name": "emiga-proxy-server",
+  "version": "0.0.1",
+  "description": "Full customizeable proxy server",
+  "main": "server/proxy.js",
+  "scripts": {
+    "start": "cd server && node proxy.js",
+    "proxy": "cd server && nodemon proxy.js",
+    "server": "cd server && nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run proxy\""
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "compression": "^1.7.4",
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "helmet": "^3.20.0",
+    "http": "0.0.0",
+    "http-proxy": "^1.17.0",
+    "http-proxy-middleware": "^0.19.1",
+    "https": "^1.0.0",
+    "tsscmp": "^1.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eminmuhammadi/emiga-proxy-server.git"
+  },
+  "keywords": [
+    "proxy",
+    "emiga-proxy-server"
+  ],
+  "author": "Emin Muhammadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eminmuhammadi/emiga-proxy-server/issues"
+  },
+  "homepage": "https://github.com/eminmuhammadi/emiga-proxy-server#readme"
+}
